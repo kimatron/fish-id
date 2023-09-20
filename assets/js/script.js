@@ -1,24 +1,25 @@
 // Array containing quiz questions, photos, and correct answers
 quizData = [{
-    img: 'assets/images/jawfish.png',
+    img: 'assets/images/jawfish.jpg',
+    alt: 'jawfish image in the ocean',
+    question: 'What fish is shown in the image?',
+    choices: [
+      'blue faced blenny', 'yellow headed jawfish', 'jiggerfish'
+    ],
+    correctAnswer: 'yellow headed jawfish'
+  },
+  {
+    img: 'assets/images/arrowcrab.jpg',
     alt: 'cat-fish image in the ocean',
-    options: [
+    choices: [
       'cat-fish', 'dpg-fish', 'elephant-fish'
     ],
     correctAnswer: 'cat-fish'
   },
   {
-    img: 'assets/images/vds.png',
+    img: 'assets/images/jawfish.jpg',
     alt: 'cat-fish image in the ocean',
-    options: [
-      'cat-fish', 'dpg-fish', 'elephant-fish'
-    ],
-    correctAnswer: 'cat-fish'
-  },
-  {
-    img: 'assets/images/vds.png',
-    alt: 'cat-fish image in the ocean',
-    options: [
+    choices: [
       'cat-fish', 'dpg-fish', 'elephant-fish'
     ],
     correctAnswer: 'cat-fish'
@@ -28,6 +29,7 @@ quizData = [{
 const quizContainer = document.getElementById("quiz-container");
 const questionContainer = document.getElementById("question-container");
 const choicesContainer = document.getElementById("choices-container");
+const imageContainer = document.getElementById("image-container");
 const submitButton = document.getElementById("submit-button");
 const resultContainer = document.getElementById("result-container");
 
@@ -39,6 +41,11 @@ function loadQuestion() {
 
   questionContainer.innerHTML = currentQuizData.question;
   choicesContainer.innerHTML = "";
+  imageContainer.innerHTML = ""; // Clear previous image
+  const imageElement = document.createElement("img"); // Create new image element
+  imageElement.src = currentQuizData.img; // Set src attribute
+  imageElement.alt = currentQuizData.alt; // Set alt attribute
+  imageContainer.appendChild(imageElement); // Append image element to image container
 
   currentQuizData.choices.forEach((choice, index) => {
     const choiceElement = document.createElement("button");
@@ -51,7 +58,7 @@ function loadQuestion() {
 }
 
 function selectAnswer(answerIndex) {
-  if (answerIndex === quizData[currentQuestion].correctAnswer) {
+  if (answerIndex === quizData[currentQuestion].choices.indexOf(quizData[currentQuestion].correctAnswer)) {
     score++;
   }
 

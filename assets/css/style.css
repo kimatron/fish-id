@@ -17,6 +17,22 @@ h1 {
   margin-bottom: 20px;
 }
 
+#image-container {
+  position: relative;
+  /* Added */
+  margin-bottom: 20px;
+  /* Added */
+}
+
+#image-container img {
+  width: 100%;
+  /* Adjust as needed */
+  height: auto;
+  /* Adjust as needed */
+  display: block;
+  border-radius: 5px;
+}
+
 #question-container {
   font-size: 20px;
   margin-bottom: 10px;
