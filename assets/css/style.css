@@ -81,6 +81,30 @@ button:hover {
   background-color: #FFC400;
 }
 
+/* Home page index button styling */
+#index-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#index-buttons {
+  display: inline-block;
+  padding: 80px 90px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #FFD700;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  text-decoration: nonegit;
+  border-radius: 5px;
+}
+
+#index-buttons:hover {
+  background-color: #FFC400;
+}
 
 /* Style for modal */
 
