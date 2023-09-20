@@ -39,6 +39,8 @@ let score = 0;
 function loadQuestion() {
   const currentQuizData = quizData[currentQuestion];
 
+  console.log(currentQuizData.img); // Debugging line
+
   questionContainer.innerHTML = currentQuizData.question;
   choicesContainer.innerHTML = "";
   imageContainer.innerHTML = ""; // Clear previous image
@@ -71,9 +73,23 @@ function selectAnswer(answerIndex) {
   }
 }
 
+function restartQuiz() {
+  currentQuestion = 0;
+  score = 0;
+  resultContainer.innerHTML = ""; // Clear previous result
+  quizContainer.style.display = "block"; // Show quiz container
+  loadQuestion();
+}
+
 function showResult() {
   quizContainer.style.display = "none";
-  resultContainer.innerHTML = `You scored ${score} out of ${quizData.length} questions.`;
+
+  if (score < 10) {
+    resultContainer.innerHTML = `Your score is ${score} out of ${quizData.length}, better study a little harder!`;
+  } else {
+    resultContainer.innerHTML = `Congratulations! Your score is ${score} out of ${quizData.length}. You're ready to get wet and go fish spotting!`;
+  }
+
 }
 
 loadQuestion();
