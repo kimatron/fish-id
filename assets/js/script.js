@@ -1,5 +1,5 @@
 // Array containing quiz questions, photos, and correct answers
-quizData = [{
+const quizData = [{
     img: 'assets/images/jawfish.jpg',
     alt: 'jawfish image in the ocean',
     question: 'What fish is shown in the image?',
@@ -93,3 +93,23 @@ function showResult() {
 }
 
 loadQuestion();
+
+/** Script for modal */
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.getElementById('modal');
+  var overlay = document.getElementById('overlay');
+  var closeModal = document.getElementById('close-modal');
+
+  function openModal() {
+    modal.classList.remove('modal--hidden');
+    overlay.classList.remove('overlay--hidden');
+  }
+
+  function closeModal() {
+    modal.classList.add('modal--hidden');
+    overlay.classList.add('overlay--hidden');
+  }
+
+  document.getElementById('show-modal-button').addEventListener('click', openModal);
+  closeModal.addEventListener('click', closeModal);
+});

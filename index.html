@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html <html lang="en">
+
+</html>
 
 <head>
   <meta charset="UTF-8">
@@ -20,29 +22,35 @@
 <body>
   <h1>Fish Out Of Water - Fish Identification Quiz</h1>
 
-  <div id="quiz-container">
-    <div id="question-container">
-      <div id="image-container"></div>
-    </div>
-    <div id="choices-container"></div>
-    <button id="submit-button">Submit</button>
+  <div class="flash-cards">
+    <a href="flashcards.html" aria-label="go to flash cards page" class="menu__link">Flash Cards</a>
+  </div>
+  <div class="fish-quiz">
+    <a href="quiz.html" aria-label="go to grammar quiz" class="menu__link">Grammar Quiz</a>
   </div>
 
-  <div id="result-container"></div>
-  <!-- Restart quiz button -->
-  <button id="restart-button" onclick="restartQuiz()">Restart Quiz</button>
+  <!--Modal window for credits-->
+
+  <aside class="modal modal--hidden" id="modal">
+    <button class="close-modal" id="close-modal">&times;</button>
+    <div class="modal__contact">
+      <div class="contact__main">
+        <div class="contact__title">
+          The website was developed by</div>
+        <div class="contact__name">Kim Hanlon</div>
+      </div>
+      <!-- <div class="contact__links"> -->
+      <div class="contact__github contact__icons"><a href="https://github.com/kimatron" target="_blank" rel="noopener"
+          aria-label="Visit my github page"><i class="fab fa-github-square icon__contact"></i></a></div>
+      <div class="contact__linkedin contact__icons"><a href="https://www.linkedin.com" target="_blank" rel="noopener"
+          aria-label="Visit my linkedin page"><i class="fab fa-linkedin icon__contact"></i></a></div>
+      <!-- </div> -->
+    </div>
+  </aside>
+  <div class="overlay overlay--hidden" id="overlay"></div>
 
   <script src="assets/js/script.js"></script>
-  <script>
-    function restartQuiz() {
-      // Add code here to reset the quiz and start over
-    }
 
-    <
-    script src = "assets/js/script.js" >
-      <
-      /> < /
-    body >
+</body>
 
-      <
-      /html>
+</html>
