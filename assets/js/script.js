@@ -4,7 +4,7 @@ quizData = [{
     alt: 'jawfish image in the ocean',
     question: 'What fish is shown in the image?',
     choices: [
-      'blue faced blenny', 'yellow headed jawfish', 'jiggerfish'
+      'Blue faced blenny', 'Yellow headed jawfish', 'Jiggerfish'
     ],
     correctAnswer: 'yellow headed jawfish'
   },
