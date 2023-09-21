@@ -1,3 +1,5 @@
+// JavaScript code
+
 const flashcards = [{
     topic: 'Fish',
     image: 'assets/images/barracuda.jpg',
@@ -13,83 +15,53 @@ const flashcards = [{
     funfact: 'Keeps its food on his head, and snacks off it when he feels like it',
   },
   {
-    topic: 'Invertebrates',
-    image: 'assets/images/arrowcrab.jpg',
-    imageAlt: 'close up photo of an arrowcrab',
-    species: 'Arrowcrab',
-    funfact: 'Keeps its food on his head, and snacks off it when he feels like it',
+    topic: 'Mammals',
+    image: 'assets/images/lettuceseaslug.jpg',
+    imageAlt: 'dolphin swimming',
+    species: 'Dolphin',
+    funfact: 'Uses echolocation to navigate and find food',
   },
-]
+];
 
 const card = document.querySelector('.card');
 const cardNextButton = document.querySelector('#card__next');
 let currentSpecies;
 let temporaryCardsArray = [];
 
-const modal = document.querySelector('#modal');
-const overlay = document.querySelector('#overlay');
-const btnCloseModal = document.querySelector('#close-modal');
-const btnOpenModal = document.querySelector('#button__instructions');
-// Wait for the DOM to finish loading before running the quiz
-
 document.addEventListener('DOMContentLoaded', function () {
   generateCard();
 
-  // Change Card on click
-
   cardNextButton.addEventListener('click', generateCard);
 
-  // Click enter to go to another card
-
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-      generateCard();
-    }
-  });
-
-  // Flip card on the click
   card.addEventListener('click', function (e) {
     e.preventDefault();
     card.classList.toggle('is-flipped');
   });
 
-  /* Generate random index for the FC*/
-  const createRandom = function () {
-    return Math.floor(Math.random() * flashcards.length);
-  };
-
-
-  /**
-   * Function generates the Flash Card for the user
-   * with all visible elements
-   */
-  const generateCard = function () {
-    card.classList.remove('is-flipped');
-    if (flashcards.length === 0) {
-      flashcards.push.apply(flashcards, temporaryCardsArray);
-    }
-
-    let cardTopic = document.querySelector('.card--front .topic');
-    let cardImage = document.querySelector('.card--front .image');
-    let cardContent = document.querySelector('.card--back .card__content');
-
-
-    let randomIndex = createRandom();
-
-    cardTopic.innerText = flashcards[randomIndex].topic;
-    cardImage.innerHTML = `<img loading="lazy" src=${flashcards[randomIndex].image} alt=${flashcards[randomIndex].imageAlt}>`;
-    cardContent.innerHTML = `
-      <h3>${flashcards[randomIndex].species}</h3>
-      <p>${flashcards[randomIndex].funfact}</p>
-    `;
-
-    currentSpecies = flashcards[randomIndex].species;
-
-    temporaryCardsArray.push(flashcards[randomIndex]);
-    flashcards.splice([randomIndex], 1);
-  };
-
-
-
-
 });
+
+const generateCard = function () {
+  card.classList.remove('is-flipped');
+  if (flashcards.length === 0) {
+    flashcards.push.apply(flashcards, temporaryCardsArray);
+  }
+
+  let cardTopic = document.querySelector('.card--front .topic');
+  let cardImage = document.querySelector('.card--front .image');
+  let cardContent = document.querySelector('.card--back .card__content');
+
+  let remainingFlashcards = flashcards.filter((flashcard) => !temporaryCardsArray.includes(flashcard));
+  let randomIndex = Math.floor(Math.random() * remainingFlashcards.length);
+
+  cardTopic.innerText = remainingFlashcards[randomIndex].topic;
+  cardImage.innerHTML = `<img loading="lazy" src=${remainingFlashcards[randomIndex].image} alt=${remainingFlashcards[randomIndex].imageAlt}>`;
+  cardContent.innerHTML = `
+  <h3>${remainingFlashcards[randomIndex].species}</h3>
+  <p>${remainingFlashcards[randomIndex].funfact}</p>
+`;
+
+  currentSpecies = remainingFlashcards[randomIndex].species;
+
+  temporaryCardsArray.push(remainingFlashcards[randomIndex]);
+  flashcards.splice(flashcards.indexOf(remainingFlashcards[randomIndex]), 1);
+};
