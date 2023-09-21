@@ -50,18 +50,17 @@ const generateCard = function () {
   let cardImage = document.querySelector('.card--front .image');
   let cardContent = document.querySelector('.card--back .card__content');
 
-  let remainingFlashcards = flashcards.filter((flashcard) => !temporaryCardsArray.includes(flashcard));
-  let randomIndex = Math.floor(Math.random() * remainingFlashcards.length);
+  let randomIndex = Math.floor(Math.random() * flashcards.length);
 
-  cardTopic.innerText = remainingFlashcards[randomIndex].topic;
-  cardImage.innerHTML = `<img loading="lazy" src=${remainingFlashcards[randomIndex].image} alt=${remainingFlashcards[randomIndex].imageAlt}>`;
+  cardTopic.innerText = flashcards[randomIndex].topic;
+  cardImage.innerHTML = `<img loading="lazy" src=${flashcards[randomIndex].image} alt=${flashcards[randomIndex].imageAlt}>`;
   cardContent.innerHTML = `
-  <h3>${remainingFlashcards[randomIndex].species}</h3>
-  <p>${remainingFlashcards[randomIndex].funfact}</p>
-`;
+    <h3>${flashcards[randomIndex].species}</h3>
+    <p>${flashcards[randomIndex].funfact}</p>
+  `;
 
-  currentSpecies = remainingFlashcards[randomIndex].species;
+  currentSpecies = flashcards[randomIndex].species;
 
-  temporaryCardsArray.push(remainingFlashcards[randomIndex]);
-  flashcards.splice(flashcards.indexOf(remainingFlashcards[randomIndex]), 1);
+  temporaryCardsArray.push(flashcards[randomIndex]);
+  flashcards.splice(randomIndex, 1);
 };
