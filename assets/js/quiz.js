@@ -154,6 +154,21 @@ function selectAnswer(answerIndex) {
   }
 }
 
+
+
+function showResult() {
+  quizContainer.style.display = "none";
+  tallyContainer.style.display = "none";
+  choicesContainer.style.display = "none";
+
+  const resultText = document.getElementById("result-text");
+  if (score < 10) {
+    resultText.innerHTML = `Your score is ${score} out of ${quizData.length}, better study a little harder!`;
+  } else {
+    resultText.innerHTML = `Congratulations! Your score is ${score} out of ${quizData.length}. You're ready to get wet and go fish spotting!`;
+  }
+}
+
 function restartQuiz() {
   currentQuestion = 0;
   score = 0;
@@ -162,19 +177,6 @@ function restartQuiz() {
   choicesContainer.style.display = "block";
   tallyContainer.style.display = "block";
   loadQuestion();
+  showResult();
 }
-
-function showResult() {
-  quizContainer.style.display = "none";
-  tallyContainer.style.display = "none";
-  choicesContainer.style.display = "none";
-
-  if (score < 10) {
-    resultContainer.innerHTML = `Your score is ${score} out of ${quizData.length}, better study a little harder!`;
-  } else {
-    resultContainer.innerHTML = `Congratulations! Your score is ${score} out of ${quizData.length}. You're ready to get wet and go fish spotting!`;
-  }
-
-}
-
 loadQuestion();

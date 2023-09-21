@@ -79,9 +79,17 @@ button.button1 {
 }
 
 #result-container {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
+  color: #FFC400;
   margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+#result-text {
+  font-size: 24px;
+  margin-top: 10px;
 }
 
 #home-button-container {
