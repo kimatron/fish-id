@@ -61,7 +61,7 @@ const quizData = [{
     correctAnswer: 'Carribean Reef Squid'
   },
   {
-    img: 'assets/images/dustjawfish.jpg',
+    img: 'assets/images/dustyjawfish.jpg',
     alt: 'jawfish image in the ocean',
     question: 'What fish is shown in the image?',
     choices: [

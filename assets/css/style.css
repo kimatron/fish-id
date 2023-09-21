@@ -22,15 +22,19 @@ h1 {
   position: relative;
   /* Added */
   margin-bottom: 20px;
-  /* Added */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #image-container img {
-  width: auto;
-  /* Adjust as needed */
+  width: 100%;
   height: auto;
+  max-width: 30%;
   /* Adjust as needed */
-  display: block;
+  max-height: 30%;
+  /* Adjust as needed */
+  object-fit: contain;
   border-radius: 5px;
 }
 
