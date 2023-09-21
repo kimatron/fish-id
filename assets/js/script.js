@@ -95,6 +95,7 @@ const choicesContainer = document.getElementById("choices-container");
 const imageContainer = document.getElementById("image-container");
 const submitButton = document.getElementById("submit-button");
 const resultContainer = document.getElementById("result-container");
+const tallyContainer = document.getElementById("tally-container");
 
 let currentQuestion = 0;
 let score = 0;
@@ -104,7 +105,7 @@ function loadQuestion() {
 
   console.log(currentQuizData.img); // Debugging line
   // Display the current tally
-  const tallyContainer = document.getElementById("tally-container");
+
   tallyContainer.innerHTML = `Question ${currentQuestion + 1}/${quizData.length}`;
 
   questionContainer.innerHTML = currentQuizData.question;
@@ -144,11 +145,14 @@ function restartQuiz() {
   score = 0;
   resultContainer.innerHTML = ""; // Clear previous result
   quizContainer.style.display = "block"; // Show quiz container
+  choicesContainer.style.display = "block";
   loadQuestion();
 }
 
 function showResult() {
   quizContainer.style.display = "none";
+  tallyContainer.style.display = "none";
+  choicesContainer.style.display = "none";
 
   if (score < 10) {
     resultContainer.innerHTML = `Your score is ${score} out of ${quizData.length}, better study a little harder!`;

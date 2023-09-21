@@ -283,6 +283,19 @@ img {
   cursor: pointer;
 }
 
+/* Hide the default close button */
+.close-modal {
+  display: none;
+}
+
+/* Add styles for the new close button icon */
+.modal .close-modal-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
 .overlay {
   position: fixed;
   top: 0;
