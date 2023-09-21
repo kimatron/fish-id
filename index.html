@@ -20,6 +20,20 @@
 </head>
 
 <body>
+  <button class="button1" onclick="openModal()">Open Modal</button>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Game Rules</h2>
+      <p>These are the rules of the game:</p>
+      <ul>
+        <li>Rule 1: ...li>
+        <li>Rule 2: ...</li>
+        <li>Rule 3: ...</li>
+      </ul>
+    </div>
+  </div>
   <h1> <img src="assets/images/arrowcrab.jpg" alt="Arrowcrab close up">Fish Out Of Water - Fish Identification Dive
     Preparation</h1>
   <div id="index-button-container">
@@ -30,28 +44,7 @@
       <a href="quiz.html" aria-label="go to Fish ID quiz" class="menu__link">Fish ID Quiz</a>
     </div>
   </div>
-  <!--Modal window for credits-->
-  <button class="show-modal-button">
-    <i class="fas fa-plus"></i> Show Modal
-  </button>
-  <button class="close-modal-icon" id="close-modal-button">&times;</button>
-  <aside class="modal modal--hidden" id="modal">
-    <button class="close-modal" id="close-modal">&times;</button>
-    <div class="modal__contact">
-      <div class="contact__main">
-        <div class="contact__title">
-          The website was developed by</div>
-        <div class="contact__name">Kim Hanlon</div>
-      </div>
-      <!-- <div class="contact__links"> -->
-      <div class="contact__github contact__icons"><a href="https://github.com/kimatron" target="_blank" rel="noopener"
-          aria-label="Visit my github page"><i class="fab fa-github-square icon__contact"></i></a></div>
-      <div class="contact__linkedin contact__icons"><a href="https://www.linkedin.com" target="_blank" rel="noopener"
-          aria-label="Visit my linkedin page"><i class="fab fa-linkedin icon__contact"></i></a></div>
-      <!-- </div> -->
-    </div>
-  </aside>
-  <div class="overlay overlay--hidden" id="overlay"></div>
+
 
   <script src="assets/js/script.js"></script>
 
