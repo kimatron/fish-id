@@ -96,6 +96,7 @@ const imageContainer = document.getElementById("image-container");
 const submitButton = document.getElementById("submit-button");
 const resultContainer = document.getElementById("result-container");
 const tallyContainer = document.getElementById("tally-container");
+const restartButton = document.getElementById("restart-button");
 
 let currentQuestion = 0;
 let score = 0;
@@ -107,6 +108,14 @@ function loadQuestion() {
   // Display the current tally
 
   tallyContainer.innerHTML = `Question ${currentQuestion + 1}/${quizData.length}`;
+  // Clear existing classes for tally styles
+  tallyContainer.classList = "";
+
+
+  // Add blink function to make current question tally standout
+  if (currentQuestion >= 0) {
+    tallyContainer.classList.add("blink"); // Add the CSS class for blinking effect
+  }
 
   questionContainer.innerHTML = currentQuizData.question;
   choicesContainer.innerHTML = "";
@@ -124,6 +133,11 @@ function loadQuestion() {
     );
     choicesContainer.appendChild(choiceElement);
   });
+  if (currentQuestion === 0) {
+    restartButton.style.display = "none";
+  } else {
+    restartButton.style.display = "block";
+  }
 }
 
 function selectAnswer(answerIndex) {

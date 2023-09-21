@@ -110,6 +110,48 @@ button.button1 {
   text-align: center;
 }
 
+/* Style for tally on quiz */
+/* Add a background color and padding for the first question */
+.highlight-first {
+  background-color: #ffc107;
+  /* Adjust the background color to your preference */
+  padding: 5px;
+  /* Adjust the padding to your preference */
+}
+
+/* Add a background color and padding for the last question */
+.highlight-last {
+  background-color: #17a2b8;
+  /* Adjust the background color to your preference */
+  padding: 5px;
+  /* Adjust the padding to your preference */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+
+}
+
+#tally-container {
+  color: #ffc107;
+  font-weight: bolder;
+  text-align: center;
+}
+
 .index-buttons {
   display: inline-block;
   padding: 80px 90px;
