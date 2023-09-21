@@ -76,11 +76,11 @@ Accent Font
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the [GitHub repository](https://github.com/kimatron/deepbreath), navigate to the Settings tab 
+  - In the [GitHub repository](https://github.com/kimatron/fish-id), navigate to the Settings tab 
   - From the source section drop-down menu, select the **Main** Branch, then click "Save".
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://kimatron.github.io/deepbreath/)
+The live link can be found [here](https://kimatron.github.io/fish-id/)
 
 ## Local Deployment
 
@@ -112,7 +112,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 [FreeCodeCamp](www.freecodecamp.org).
 - Rewatched Love Running project from [Code Institute](www.codeinstitute.com) for inspiration on order to set up html and css.
 - Used [Coolors](https://coolors.co/) to get a color scheme to match my images.
-- All photos used were my own, taken by me or for me.
+- All photos used were my own, taken by me or for me with permission by my co-worker Tony Land.
 ### Acknowledgments
 - Thanks to my fellow coding student Viola Bergere for keeping me motivated and being my second pair of eyes when I was missing a curly bracket or colon when I was fit to smash my computer out the window :)
 - And thanks to my mentor Juliia for all her knowledgable guidance and patience with my troubleshooting woes https://github.com/IuliiaKonovalova 
