@@ -25,31 +25,67 @@ const quizData = [{
     correctAnswer: 'Barracuda'
   },
   {
-    img: 'assets/images/jawfish.jpg',
-    alt: 'jawfish image in the ocean',
+    img: 'assets/images/blacktipreefshark.jpg',
+    alt: 'blacktip reef shark image in the ocean',
     question: 'What fish is shown in the image?',
     choices: [
-      'Blue faced blenny', 'Yellow headed jawfish', 'Jiggerfish'
+      'Great White Shark', 'Nurse Shark', 'Blacktip Reef Shark'
     ],
-    correctAnswer: 'Yellow headed jawfish'
+    correctAnswer: 'Blacktip Reef Shark'
   },
   {
-    img: 'assets/images/jawfish.jpg',
-    alt: 'jawfish image in the ocean',
+    img: 'assets/images/blenny.jpg',
+    alt: ' image of blenny in coral',
     question: 'What fish is shown in the image?',
     choices: [
-      'Blue faced blenny', 'Yellow headed jawfish', 'Jiggerfish'
+      'Red faced blumpy', 'Blenny', 'Snoutfish'
     ],
-    correctAnswer: 'Yellow headed jawfish'
+    correctAnswer: 'Blenny'
   },
   {
-    img: 'assets/images/jawfish.jpg',
+    img: 'assets/images/bumpheadparrotfish.jpg',
+    alt: 'bumphead parrotfish image in the ocean',
+    question: 'What fish is shown in the image?',
+    choices: [
+      'Bumphead Parrotfish', 'Lumpy Snapper', 'Humphead Wrasse'
+    ],
+    correctAnswer: 'Bumphead Parrotfish'
+  },
+  {
+    img: 'assets/images/carribeansquid.jpg',
+    alt: 'squid swimming in Caribbean',
+    question: 'What fish is shown in the image?',
+    choices: [
+      'Giant Squid', 'Carribean Reef Squid', 'Octopus'
+    ],
+    correctAnswer: 'Carribean Reef Squid'
+  },
+  {
+    img: 'assets/images/dustjawfish.jpg',
     alt: 'jawfish image in the ocean',
     question: 'What fish is shown in the image?',
     choices: [
-      'Blue faced blenny', 'Yellow headed jawfish', 'Jiggerfish'
+      'Crusty Creolefish', 'Peeking Mouthfish', 'Dusty Jawfish'
     ],
-    correctAnswer: 'Yellow headed jawfish'
+    correctAnswer: 'Dusty Jawfish'
+  },
+  {
+    img: 'assets/images/featherdusterworm.jpg',
+    alt: 'featherdusterworm with statue in the background',
+    question: 'What fish is shown in the image?',
+    choices: [
+      'Sea cucumber', 'Feather Duster Worm', 'Anenome'
+    ],
+    correctAnswer: 'Feather Duster Worm'
+  },
+  {
+    img: 'assets/images/filefish.jpg',
+    alt: 'filefish image in the ocean',
+    question: 'What fish is shown in the image?',
+    choices: [
+      'Filefish', 'Floatfish', 'Hideyfish'
+    ],
+    correctAnswer: 'Filefish'
   },
 ]
 
