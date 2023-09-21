@@ -6,23 +6,50 @@ const quizData = [{
     choices: [
       'Blue faced blenny', 'Yellow headed jawfish', 'Jiggerfish'
     ],
-    correctAnswer: 'yellow headed jawfish'
+    correctAnswer: 'Yellow headed jawfish'
   },
   {
     img: 'assets/images/arrowcrab.jpg',
-    alt: 'cat-fish image in the ocean',
+    alt: 'Arrowcrab close up image in the ocean',
     choices: [
-      'cat-fish', 'dpg-fish', 'elephant-fish'
+      'Arrow Crab', 'Spider Crab', 'Peeping Tom'
     ],
-    correctAnswer: 'cat-fish'
+    correctAnswer: 'Arrow Crab'
+  },
+  {
+    img: 'assets/images/barracuda.jpg',
+    alt: 'Barracuda fish in the caribbean sea',
+    choices: [
+      'Swordfish', 'Tuna', 'Barracuda'
+    ],
+    correctAnswer: 'Barracuda'
   },
   {
     img: 'assets/images/jawfish.jpg',
-    alt: 'cat-fish image in the ocean',
+    alt: 'jawfish image in the ocean',
+    question: 'What fish is shown in the image?',
     choices: [
-      'cat-fish', 'dpg-fish', 'elephant-fish'
+      'Blue faced blenny', 'Yellow headed jawfish', 'Jiggerfish'
     ],
-    correctAnswer: 'cat-fish'
+    correctAnswer: 'Yellow headed jawfish'
+  },
+  {
+    img: 'assets/images/jawfish.jpg',
+    alt: 'jawfish image in the ocean',
+    question: 'What fish is shown in the image?',
+    choices: [
+      'Blue faced blenny', 'Yellow headed jawfish', 'Jiggerfish'
+    ],
+    correctAnswer: 'Yellow headed jawfish'
+  },
+  {
+    img: 'assets/images/jawfish.jpg',
+    alt: 'jawfish image in the ocean',
+    question: 'What fish is shown in the image?',
+    choices: [
+      'Blue faced blenny', 'Yellow headed jawfish', 'Jiggerfish'
+    ],
+    correctAnswer: 'Yellow headed jawfish'
   },
 ]
 
@@ -40,6 +67,9 @@ function loadQuestion() {
   const currentQuizData = quizData[currentQuestion];
 
   console.log(currentQuizData.img); // Debugging line
+  // Display the current tally
+  const tallyContainer = document.getElementById("tally-container");
+  tallyContainer.innerHTML = `Question ${currentQuestion + 1}/${quizData.length}`;
 
   questionContainer.innerHTML = currentQuizData.question;
   choicesContainer.innerHTML = "";
