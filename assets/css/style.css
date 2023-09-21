@@ -177,7 +177,8 @@ button.button1 {
 }
 
 .index-buttons a {
-  color: #004d4d text-decoration: none;
+  color: #004d4d;
+  text-decoration: none;
 }
 
 .index-buttons a:visited {
