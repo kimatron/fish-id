@@ -154,6 +154,16 @@ function selectAnswer(answerIndex) {
   }
 }
 
+function restartQuiz() {
+  currentQuestion = 0;
+  score = 0;
+  resultContainer.innerHTML = ""; // Clear previous result
+  quizContainer.style.display = "block"; // Show quiz container
+  choicesContainer.style.display = "block";
+  tallyContainer.style.display = "block";
+  loadQuestion();
+  showResult();
+}
 
 
 function showResult() {
@@ -167,16 +177,7 @@ function showResult() {
   } else {
     resultText.innerHTML = `Congratulations! Your score is ${score} out of ${quizData.length}. You're ready to get wet and go fish spotting!`;
   }
+
 }
 
-function restartQuiz() {
-  currentQuestion = 0;
-  score = 0;
-  resultContainer.innerHTML = ""; // Clear previous result
-  quizContainer.style.display = "block"; // Show quiz container
-  choicesContainer.style.display = "block";
-  tallyContainer.style.display = "block";
-  loadQuestion();
-  showResult();
-}
 loadQuestion();
