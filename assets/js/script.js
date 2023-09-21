@@ -113,16 +113,3 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('show-modal-button').addEventListener('click', openModal);
   closeModal.addEventListener('click', closeModal);
 });
-
-// Get all the flash cards
-// Get all the flash cards
-const cards = document.querySelectorAll('.card');
-
-// Add click event listeners to the flash cards
-cards.forEach(card => {
-  card.addEventListener('click', function () {
-    // Toggle the classes to flip the card
-    this.classList.toggle('card--back');
-    this.classList.toggle('card--front');
-  });
-});

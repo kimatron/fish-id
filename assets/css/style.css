@@ -7,6 +7,7 @@ body {
 h1 {
   color: #ffffff;
   margin-top: 20px;
+  text-align: center;
 }
 
 #quiz-container {
@@ -87,7 +88,7 @@ button:hover {
   text-align: center;
 }
 
-#index-buttons {
+.index-buttons {
   display: inline-block;
   padding: 80px 90px;
   margin-right: 20px;
@@ -102,7 +103,7 @@ button:hover {
   border-radius: 5px;
 }
 
-#index-buttons:hover {
+.index-buttons:hover {
   background-color: #FFC400;
 }
 
@@ -135,7 +136,7 @@ button:hover {
   margin-right: 5px;
 }
 
-/* Stle for flashcards */
+/* Style for flashcards */
 /* Card Styling */
 
 .card__holder {
