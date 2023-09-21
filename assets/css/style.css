@@ -248,6 +248,20 @@ img {
   z-index: 999;
 }
 
+.show-modal-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.show-modal-button i {
+  margin-right: 5px;
+}
+
 .modal--hidden {
   display: none;
 }
@@ -283,3 +297,5 @@ img {
 .overlay--hidden {
   display: none;
 }
+
+/* Media queries for flashcards on smaller screens */

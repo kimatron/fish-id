@@ -166,6 +166,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var overlay = document.getElementById('overlay');
   var closeModal = document.getElementById('close-modal');
 
+  document.querySelector('.show-modal-button').addEventListener('click', openModal);
+
   function openModal() {
     modal.classList.remove('modal--hidden');
     overlay.classList.remove('overlay--hidden');
