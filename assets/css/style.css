@@ -236,14 +236,12 @@ button.button1 {
 /* Style for flashcards */
 /* Card Styling */
 
-.card__holder {
+.card-container {
   grid-column: 1/4;
   grid-row: 2/3;
   align-items: center;
   justify-self: center;
   justify-content: center;
-  width: 30vw;
-  height: 60vh;
   perspective: 60vw;
 }
 
@@ -254,6 +252,10 @@ button.button1 {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  background-color: #232346;
+  /* Adjust the color as desired */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Add a box shadow */
 }
 
 /* Class for flipping front of the card*/

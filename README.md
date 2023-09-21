@@ -1,14 +1,36 @@
-![Deep Breath logo](assets/images/logodb.png)
+![Fish Out Of Water Logo](assets/images/fishoutofwaterlogo.png)
 
 # Fish Out Of Water
 
 Fish out of water is a quiz designed to help scuba diving students prepare for their underwater Fish Identification course.
 
-The quiz shows images of fish that can be found on local dive sites, and gives users multiple choice questions for them to identify the fish. 
+The requirements to pass a Fish Identification course are to complete an underwater scuba dive with an instructor and correctly identify at least 8 different species of fish, and 5 different types of invertebrates. 
+
+The flash cards show images of marine life for users to study and identify, and learn fun facts about the different animals.
+
+The quiz shows images of fish and other sea creatures that can be found on local dive sites to help them prepare for the underwater exam, and gives users multiple choice questions for them to identify the fish. 
+
 The site can be accessed through this 
 [link](https://kimatron.github.io/fish-id/)
 
-![Fish Out Of Water](documentation/indexresponsive.png)
+![Fish Out Of Water](documentation/fowresponsive.png)
+## User Stories
+
+### First Time Visitor Goals:
+
+* As a First Time Visitor, I want to easily understand the main purpose of the app, so that I can identify if it is something that will interest me and benefit my needs.
+* As a First Time Visitor, I want to be able to easily navigate through the app, so I don't get frustrated and lose interest.
+* As a First Time Visitor, I want to learn more about the fish that I will encounter on my dive, so I can know what to look for and pass my underwater exam.
+* As a first time visitor, I want to read some information about marine life that will get me excited about going for a dive.
+
+### Returning Visitor Goals:
+
+* As a Returning Visitor, I want to see re do the quiz and see how many of the creatures I saw on my dive.
+* As a Returning Visitor, I want to see updated flash cards with interesting fun facts about marine life.
+
+### Frequent Visitor Goals:
+* As a Frequent User, I want to brush up on my skills and learn newly added facts that will make me continue to visit the site.
+
 
 ## Existing Features
 ### - Navigation Bar
