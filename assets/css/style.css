@@ -26,7 +26,7 @@ h1 {
 }
 
 #image-container img {
-  width: 100%;
+  width: auto;
   /* Adjust as needed */
   height: auto;
   /* Adjust as needed */
