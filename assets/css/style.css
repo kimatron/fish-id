@@ -171,11 +171,33 @@ button.button1 {
   color: #333;
   text-decoration: none;
   font-family: 'Manrope', sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: larger;
-  text-decoration: nonegit;
   border-radius: 5px;
 }
+
+.index-buttons a {
+  text-decoration: none;
+}
+
+.index-buttons a:visited {
+  color: #333;
+  /* Change the color for visited links here */
+}
+
+.index-buttons a:hover {
+  text-decoration: underline;
+}
+
+.index-buttons a:focus {
+  outline: none;
+}
+
+.index-buttons a:active {
+  color: green;
+  /* Change the color for active links here */
+}
+
 
 .index-buttons:hover {
   background-color: #FFC400;
