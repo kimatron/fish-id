@@ -19,7 +19,7 @@ The site can be accessed through this
 ### First Time Visitor Goals:
 
 * As a First Time Visitor, I want to easily understand the main purpose of the app, so that I can identify if it is something that will interest me and benefit my needs.
-* As a First Time Visitor, I want to be able to easily navigate through the app, so I don't get frustrated and lose interest.
+* As a First Time Visitor, I want to be able to easily navigate through the app, so that I don't get frustrated and lose interest.
 * As a First Time Visitor, I want to learn more about the fish that I will encounter on my dive, so I can know what to look for and pass my underwater exam.
 * As a first time visitor, I want to read some information about marine life that will get me excited about going for a dive.
 
@@ -33,13 +33,13 @@ The site can be accessed through this
 
 
 ## Existing Features
-### - Navigation Bar
+### - Home Page
 - Positioned at the top of the page.
 - Contains the logo of the company on the left side.
 - A full responsive navigation bar on the right includes links to the homepage of Deep Breath, a photo Gallery, a short blog on the benefits of scuba diving on mental health, and a Contact Us section. 
 - Each section is easy to identify and identical in a manner to allow for easy navigation. 
 
-The purpose of this feature is to allow users to easily navigate through different sections of the site.
+The purpose of this feature is to allow users to easily identify what features are available on the site and why these features exist and will benefit them to keep exploring.
 
 ![Navbar](documentation/navbar.png)
 
@@ -79,21 +79,20 @@ The purpose of this feature is to allow users to easily navigate through differe
 ## Design
 
 ### Color Scheme
-Dark and light blues and coral shades were used to match the water theme of the company and to coordinate with underwater images and provide a contrast for visual ease.
+Dark and light blues and green shades were used to match the underwater and marine life theme so that the images would not clash, and also be more visually appealing to the user. A bright yellow/orange contrast was used to break up the monotony of the blues and to make certain features and information stand out.
 
-![Color Scheme](documentation/deepbreath_colorpalette.png)
+![Color Scheme](documentation/fishoutofwatercoolors.png)
 
 ### Typography
 
 Main Font 
-- Catamaran (sans-serif) Google Font was used as the main font of the website to increase the readability of the content on the pages.
+- Manrope is an open-source modern sans-serif font family, designed by Mikhail Sharanda in 2018 obtained from Google Font. It was used to attract viewers' attention while not being too formal and easy to read.
 
-![Catamaran](documentation/catamaranfont.png)
+![Manrope](documentation/manrope.png)
 
-Accent Font 
-- Questrial (sans-serif) Google Font was used to attract viewers' attention to the company's logo and to differentiate the strong points of the company.
 
-![Questrial](documentation/questrialfont.png)
+### Logo
+- Logo was designed using a premade fish icon and creating my own style text to sit under it on [Canva](http.canva.com) ![logo](documentation/fishoutofwaterlogo.png)
 
 ## Deployment
 
@@ -109,7 +108,7 @@ The live link can be found [here](https://kimatron.github.io/fish-id/)
 In order to make a local copy of this project, you can clone it.
 In your IDE Terminal, type the following command to clone my repository:
 
-- `git clone https://github.com/kimatron/deepbreath.git`
+- `git clone https://github.com/kimatron/fish-id.git`
 
 ## Potential Future Features
 
@@ -132,7 +131,8 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 [w3schools](www.w3schools.com),
 [Stackoverflow](Stackoverflow.com),
 [FreeCodeCamp](www.freecodecamp.org).
-- Rewatched Love Running project from [Code Institute](www.codeinstitute.com) for inspiration on order to set up html and css.
+- Rewatched Love Math project from [Code Institute](www.codeinstitute.com) for inspiration on how to start setting up my site
+- Read through some open source github code to get an idea how to set up the code for modals and flash cards, then worked my code around ideas. For example, I checked the repository from an old javascript project which helped me to understand how everything functioned together more [GitHub Repository](https://github.com/IuliiaKonovalova)  
 - Used [Coolors](https://coolors.co/) to get a color scheme to match my images.
 - All photos used were my own, taken by me or for me with permission by my co-worker Tony Land.
 ### Acknowledgments
