@@ -102,6 +102,7 @@ let currentQuestion = 0;
 let score = 0;
 
 function loadQuestion() {
+  resultContainer.style.display = "none";
   const currentQuizData = quizData[currentQuestion];
 
   console.log(currentQuizData.img); // Debugging line
@@ -170,6 +171,7 @@ function showResult() {
   quizContainer.style.display = "none";
   tallyContainer.style.display = "none";
   choicesContainer.style.display = "none";
+  resultContainer.style.display = "block";
 
   const resultText = document.getElementById("result-text");
   if (score < 10) {
