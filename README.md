@@ -2,7 +2,7 @@
 
 # Fish Out Of Water
 
-Fish out of water is a quiz designed to help scuba diving students prepare for their underwater Fish Identification course.
+Fish out of water is site designed to help scuba diving students prepare for their underwater Fish Identification course.
 
 The requirements to pass a Fish Identification course are to complete an underwater scuba dive with an instructor and correctly identify at least 8 different species of fish, and 5 different types of invertebrates. 
 
