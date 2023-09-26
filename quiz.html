@@ -20,6 +20,20 @@
 </head>
 
 <body>
+  <button class="button1" onclick="openModal()">Quiz Rules</button>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Quiz Purpose</h2>
+      <p>These are the rules of the game:</p>
+      <ul>
+        <li>Fish ID Quiz features creatures you might encounter on your dive</li>
+        <li>Click on the option you believe identifies the creature in the image</li>
+        <li>Don't Cheat!</li>
+      </ul>
+    </div>
+  </div>
   <h1>Fish Out Of Water - Fish Identification Quiz</h1>
 
   <div id="quiz-container">
@@ -44,6 +58,7 @@
   </div>
 
   <script src="assets/js/quiz.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 

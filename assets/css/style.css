@@ -167,7 +167,7 @@ button.button1 {
   padding: 80px 90px;
   margin-right: 20px;
   margin-left: 20px;
-  background-color: #ffc107;
+  background-color: #FFD700;
   color: #333;
   text-decoration: none;
   font-family: 'Manrope', sans-serif;
@@ -252,9 +252,6 @@ button.button1 {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  background-color: #232346;
-  /* Adjust the color as desired */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   /* Add a box shadow */
 }
 

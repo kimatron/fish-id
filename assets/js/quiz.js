@@ -11,6 +11,7 @@ const quizData = [{
   {
     img: 'assets/images/arrowcrab.jpg',
     alt: 'Arrowcrab close up image in the ocean',
+    question: 'What creature is shown in the image?',
     choices: [
       'Arrow Crab', 'Spider Crab', 'Peeping Tom'
     ],
@@ -19,6 +20,7 @@ const quizData = [{
   {
     img: 'assets/images/barracuda.jpg',
     alt: 'Barracuda fish in the caribbean sea',
+    question: 'What creature is shown in the image?',
     choices: [
       'Swordfish', 'Tuna', 'Barracuda'
     ],
@@ -72,7 +74,7 @@ const quizData = [{
   {
     img: 'assets/images/featherdusterworm.jpg',
     alt: 'featherdusterworm with statue in the background',
-    question: 'What fish is shown in the image?',
+    question: 'What creature is shown in the image?',
     choices: [
       'Sea cucumber', 'Feather Duster Worm', 'Anenome'
     ],
