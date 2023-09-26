@@ -20,12 +20,12 @@
 </head>
 
 <body>
-  <header><button aria-label="Open Modal" class="button1" onclick="openModal()"><i
-        class="fa-solid fa-fish"></i></button>
+  <header> <button aria-label="Open Modal" class="button1"
+      onclick="document.getElementById('myModal').style.display = 'block'"><i class="fa-solid fa-fish"></i></button>
 
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="close" onclick="document.getElementById('myModal').style.display = 'none'">&times;</span>
         <h2>These are the rules of the quiz:</h2>
         <ul>
           <li>Fish ID Quiz features creatures you might encounter on your dive</li>
@@ -52,7 +52,7 @@
       <p id="result-text"></p>
     </div>
     <!-- Restart quiz button -->
-    <button id="restart-button" class="restart-button1" onclick="restartQuiz()">Restart Quiz</button>
+    <button id="restartButton">Restart Quiz</button>
 
     <!-- Home button -->
     <div id="home-button-container">

@@ -1,14 +1,21 @@
-/**
- * This function is responsible for displaying the modal.
- * By setting the "display" property of the element with the id "myModal" to "block". 
- */
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-/**
- * This function is responsible for hiding the modal.
- * By setting the "display" property of the element with the id "myModal" to "none". 
- */
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+/*jshint esversion: 8 */
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the modal open button element
+  var modalOpenBtn = document.getElementById("modalOpenBtn");
+
+  // Get the modal close button element
+  var modalCloseBtn = document.getElementById("modalCloseBtn");
+
+  // Get the modal element
+  var modal = document.getElementById("myModal");
+
+  // Function to open the modal when the modal open button is clicked
+  modalOpenBtn.addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+
+  // Function to close the modal when the modal close button is clicked
+  modalCloseBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+});

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,11 +20,11 @@
 
 <body>
   <header>
-    <button aria-label="Open Modal" class="button1" onclick="openModal()"><i class="fa-solid fa-fish"></i></button>
+    <button aria-label="Open Modal" class="button1" id="modalOpenBtn"><i class="fa-solid fa-fish"></i></button>
 
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="close" id="modalCloseBtn">&times;</span>
         <p>Fish Out Of Water is a site designed to help scuba diving students prepare for their underwater Fish
           Identification course</p>
         <p>This app was developed by Kim Hanlon, the creature of all creatures.</p>
@@ -40,19 +39,15 @@
         <p>Now, go grab your snorkel and dive into the quiz!</p>
       </div>
     </div>
-    <h1> <img src="assets/images/fishoutofwaterlogo.png" alt="Logo showing a fish and text Fish Out Of Water">Fish
+    <h1><img src="assets/images/fishoutofwaterlogo.png" alt="Logo showing a fish and text Fish Out Of Water">Fish
       Identification
       Dive
       Preparation</h1>
   </header>
   <main>
     <div id="index-button-container">
-      <!-- <div id="flash-cards" class="index-buttons"> -->
       <a href="flashcards.html" aria-label="go to flash cards page" class="menu__link index-buttons">Flash Cards</a>
-      <!-- </div> -->
-      <!-- <div id="fish-quiz" class="index-buttons"> -->
       <a href="quiz.html" aria-label="go to Fish ID quiz" class="menu__link index-buttons">Fish ID Quiz</a>
-      <!-- </div> -->
     </div>
   </main>
   <footer>
@@ -60,7 +55,6 @@
   </footer>
 
   <script src="assets/js/script.js"></script>
-
 </body>
 
 </html>

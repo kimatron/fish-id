@@ -100,6 +100,8 @@ const imageContainer = document.getElementById("image-container");
 const resultContainer = document.getElementById("result-container");
 const resultText = document.getElementById("result-text");
 const tallyContainer = document.getElementById("tally-container");
+const restartButton = document.getElementById("restartButton");
+
 
 
 // Initialize variables
@@ -204,6 +206,8 @@ function restartQuiz() {
   loadQuestion();
 
 }
+// Add event listener to restart button
+restartButton.addEventListener("click", restartQuiz);
 
 // Load the first question when the page is loaded
 loadQuestion();
