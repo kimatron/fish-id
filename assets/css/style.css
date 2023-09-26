@@ -86,14 +86,14 @@ button.button1 {
   transition: background-color 0.3s ease;
 }
 
-/* #result-container {
+#result-container {
   font-size: 40px;
   font-weight: bold;
   color: #FFC400;
   margin-top: 20px;
   text-align: center;
   padding: 20px;
-} */
+}
 
 #result-text {
   font-size: 24px;
@@ -345,6 +345,8 @@ img {
   color: #ffc107;
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid #ffc107;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .modal-content {
