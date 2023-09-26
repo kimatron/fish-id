@@ -34,25 +34,27 @@ The site can be accessed through this
 
 ## Existing Features
 ### - Home Page
-- Positioned at the top of the page.
-- Contains the logo of the company on the left side.
-- A full responsive navigation bar on the right includes links to the homepage of Deep Breath, a photo Gallery, a short blog on the benefits of scuba diving on mental health, and a Contact Us section. 
+- Logo featured centered in the screen
+- Contains a modal with information on the purpose of the site, and information on the developer with contact information to get in touch.
+- Responsive index buttons to direct the users to the two main features of the site - Fish Identification Flash Cards and the Fish ID Quiz.
 - Each section is easy to identify and identical in a manner to allow for easy navigation. 
 
 The purpose of this feature is to allow users to easily identify what features are available on the site and why these features exist and will benefit them to keep exploring.
 
-![Navbar](documentation/navbar.png)
+![Navbar](documentation/captureindex.png)
 
-### Footer
-- The footer remains at the bottom of the page and provides easy links to social media pages which are always easily accessible.
+### Flash Cards
+- Flash card section features many different species of marine life, with vibrant hight quality photos for users to visualize what creatures they may encounter on their dive.
+- Flash cards flip around on a user click and display the information of the creature and include a fun fact about each individual animal to keep the studying interesting and informative.
+- The flash cards will display randomly and repeat indefinitely.
 
-![Footer](documentation/footer.png)
+![Flash Cards](documentation/flashcard.gif)
 
-### - The landing page image
+### - Fish Identification Quiz
 
-- The landing page includes an image with text to grab the user's attention and allows them to identify the section that will direct them to information about Underwater Meditation
+- Fish ID Quiz 
 
-![Landing Page](assets/images/main-image.jpg)
+![Fish ID Quiz](documentation/capturequiz.png)
 
 ### - Gallery Page
 - A gallery page was added to include images for users to visualize what underwater meditation would look and feel like. It also breaks up any monotonous-looking text blocks.
