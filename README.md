@@ -114,11 +114,11 @@ In your IDE Terminal, type the following command to clone my repository:
 
 ## Potential Future Features
 
-- In the future adding a feature to index local dive shops in a user's area via a mapping tool and linking them to dive shops in their locality would be beneficial.
+- In the future adding a feature to have study guides for other dive specialties, such as Search and Recovery Dives, or quizzes featuring different knots and methods and techniques how to tie them.
 
- - This could also be beneficial to *us* by way of commission of sales possibly.
+ - Given more time, I will work on the aesthetic of the index page and the style of the quiz box
 
- - Adding a live booking feature would improve sales and increase response time rather than having to contact us and wait for a response.
+ - Adding a section for students to sign up for other courses and specialities on completion of their current certification.
 
 ## Testing
 
@@ -134,14 +134,14 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 [Stackoverflow](Stackoverflow.com),
 [FreeCodeCamp](www.freecodecamp.org).
 - Rewatched Love Math project from [Code Institute](www.codeinstitute.com) for inspiration on how to start setting up my site
-- Read through some open source github code to get an idea how to set up the code for modals and flash cards, then worked my code around ideas. For example, I checked the repository from an old javascript project which helped me to understand how everything functioned together more [GitHub Repository](https://github.com/IuliiaKonovalova)  
+- Read through some open source github code to get an idea how to set up the code for modals and flash cards, then worked my code around those ideas. For example, I checked the repository from an old javascript project which helped me to understand how everything in a quiz functioned together more [GitHub Repository](https://github.com/IuliiaKonovalova)  
 - Used [Coolors](https://coolors.co/) to get a color scheme to match my images.
-- All photos used were my own, taken by me or for me with permission by my co-worker Tony Land.
+- All photos used were my own, taken by me or for me with permission by my co-worker Tony Land in the Cayman Islands.
 ### Acknowledgments
 - Thanks to my fellow coding student Viola Bergere for keeping me motivated and being my second pair of eyes when I was missing a curly bracket or colon when I was fit to smash my computer out the window :)
-- And thanks to my mentor Juliia for all her knowledgable guidance and patience with my troubleshooting woes https://github.com/IuliiaKonovalova 
+- And thanks to my mentor Juliia for not ignoring me and jumping in to answer all my annoying questions whenever she was asked :) https://github.com/IuliiaKonovalova 
  
 
 ---
 
-Happy diving!
+Happy spotting!
