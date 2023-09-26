@@ -97,6 +97,7 @@ const choicesContainer = document.getElementById("choices-container");
 const imageContainer = document.getElementById("image-container");
 const submitButton = document.getElementById("submit-button");
 const resultContainer = document.getElementById("result-container");
+const resultText = document.getElementById("result-text");
 const tallyContainer = document.getElementById("tally-container");
 const restartButton = document.getElementById("restart-button");
 
@@ -160,12 +161,12 @@ function selectAnswer(answerIndex) {
 function restartQuiz() {
   currentQuestion = 0;
   score = 0;
-  resultContainer.innerHTML = ""; // Clear previous result
+  resultText.innerHTML = ""; // Clear previous result
   quizContainer.style.display = "block"; // Show quiz container
   choicesContainer.style.display = "block";
   tallyContainer.style.display = "block";
   loadQuestion();
-  showResult();
+  /*showResult();*/
 }
 
 
@@ -175,7 +176,6 @@ function showResult() {
   choicesContainer.style.display = "none";
   resultContainer.style.display = "block";
 
-  const resultText = document.getElementById("result-text");
   if (score < 10) {
     resultText.innerHTML = `Your score is ${score} out of ${quizData.length}, better study a little harder!`;
   } else {
