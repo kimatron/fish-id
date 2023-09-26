@@ -13,7 +13,7 @@ The quiz shows images of fish and other sea creatures that can be found on local
 The site can be accessed through this 
 [link](https://kimatron.github.io/fish-id/)
 
-![Fish Out Of Water](documentation/fowresponsive.png)
+![Fish Out Of Water](documentation/amrquiz.png)
 ## User Stories
 
 ### First Time Visitor Goals:
@@ -25,15 +25,15 @@ The site can be accessed through this
 
 ### Returning Visitor Goals:
 
-* As a Returning Visitor, I want to see re do the quiz and see how many of the creatures I saw on my dive.
-* As a Returning Visitor, I want to see updated flash cards with interesting fun facts about marine life.
+* As a Returning Visitor, I want to re do the quiz and see how many of the creatures I saw on my dive.
+* As a Returning Visitor, I want to see updated flash cards with interesting fun facts about marine life to keep learning.
 
 ### Frequent Visitor Goals:
 * As a Frequent User, I want to brush up on my skills and learn newly added facts that will make me continue to visit the site.
 
 
 ## Existing Features
-### - Home Page
+### Home Page
 - Logo featured centered in the screen
 - Contains a modal with information on the purpose of the site, and information on the developer with contact information to get in touch.
 - Responsive index buttons to direct the users to the two main features of the site - Fish Identification Flash Cards and the Fish ID Quiz.
@@ -51,10 +51,18 @@ The purpose of this feature is to allow users to easily identify what features a
 ![Flash Cards](documentation/flashcard.gif)
 
 ### - Fish Identification Quiz
+- The main feature of the page is the Fish Identification Quiz, which features several images of various marine life (fish and invertebrates)
 
-- Fish ID Quiz 
+![Fish ID Quiz](documentation/quizcapture.png)
+- Each image has 3 multiple choice options for user to pick from
+- There's a reset button to start the quiz again at any point
+- A tally draws users attention with a blinking function to let the user how far along they are in the quiz as they go
+![Flash Cards](documentation/capturerestart.png)
+- A home button will direct the user back to the index page on every question
+![Flash Cards](documentation/capturehome.png)
+- There's a result page that only show's when the quiz is complete and tells the user how many questions they got correct out of the amount of questions in the quiz
+![Flash Cards](documentation/captureresults.png)
 
-![Fish ID Quiz](documentation/capturequiz.png)
 
 ### - Gallery Page
 - A gallery page was added to include images for users to visualize what underwater meditation would look and feel like. It also breaks up any monotonous-looking text blocks.
@@ -62,21 +70,16 @@ The purpose of this feature is to allow users to easily identify what features a
 
 
 
+### Modals
+- There are two modals that have images of a fish icon that when clicked will pop up:
+- The purpose of the site
+ - Information on the developer of the app and how to contact me
+    - Rules of the Game
+  
 
-### - Benefits
-- A benefits page was added to show users the mental and physical health benefits of scuba diving.
-- It has a call to action button right after the introduction message that leads to the contact form page.
+![Contact Us](documentation/modalborder.png)
 
-### Contact page
-- The contact page has a contact form that :
-    - All text input fields are customized.
-   - Important inputs are set to be required to fill out.
-    - The submit button is animated on hover.
-     - The submit button leads to the response page.
-- Contains an interactive map with the location of the dive center.
-- Contains a contact us box with a typed physical address.
-
-![Contact Us](documentation/contactus.png)
+![Index Modal](documentation/modal.png)
 
 ## Design
 
@@ -134,11 +137,11 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 [Stackoverflow](Stackoverflow.com),
 [FreeCodeCamp](www.freecodecamp.org).
 - Rewatched Love Math project from [Code Institute](www.codeinstitute.com) for inspiration on how to start setting up my site
-- Read through some open source github code to get an idea how to set up the code for modals and flash cards, then worked my code around those ideas. For example, I checked the repository from an old javascript project which helped me to understand how everything in a quiz functioned together more [GitHub Repository](https://github.com/IuliiaKonovalova)  
+- Read through some open source github code to get an idea how to set up the code for modals and flash cards, then worked my code around those ideas. For example, I checked the repository from an old javascript project which helped me to understand how everything in a quiz functioned together more. Used Iuliias code as a base for the flashcards to learn and play around with to add more depth and usefulness to the aim of the page[GitHub Repository](https://github.com/IuliiaKonovalova)  
 - Used [Coolors](https://coolors.co/) to get a color scheme to match my images.
 - All photos used were my own, taken by me or for me with permission by my co-worker Tony Land in the Cayman Islands.
 ### Acknowledgments
-- Thanks to my fellow coding student Viola Bergere for keeping me motivated and being my second pair of eyes when I was missing a curly bracket or colon when I was fit to smash my computer out the window :)
+- Thanks to Viola for keeping me sane and providing advice at silly o clock in the morning when my eyes weren't working anymore joining me for a hackathon in the middle of the project, as if we didn't have enough to keep us awake at night :)
 - And thanks to my mentor Juliia for not ignoring me and jumping in to answer all my annoying questions whenever she was asked :) https://github.com/IuliiaKonovalova 
  
 
