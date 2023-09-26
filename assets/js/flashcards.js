@@ -1,4 +1,4 @@
-// JavaScript code
+/* jshint esversion: 8 */
 
 const flashcards = [{
     topic: 'Fish',

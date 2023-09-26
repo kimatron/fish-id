@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 // Array containing quiz questions, photos, and correct answers
 const quizData = [{
     img: 'assets/images/jawfish.jpg',
@@ -89,68 +90,95 @@ const quizData = [{
     ],
     correctAnswer: 'Filefish'
   },
-]
+];
 
+// Get DOM elements
 const quizContainer = document.getElementById("quiz-container");
 const questionContainer = document.getElementById("question-container");
 const choicesContainer = document.getElementById("choices-container");
 const imageContainer = document.getElementById("image-container");
-const submitButton = document.getElementById("submit-button");
 const resultContainer = document.getElementById("result-container");
 const resultText = document.getElementById("result-text");
 const tallyContainer = document.getElementById("tally-container");
-const restartButton = document.getElementById("restart-button");
 
+
+// Initialize variables
 let currentQuestion = 0;
 let score = 0;
 
+// Function to load the current question
 function loadQuestion() {
+  // Hide the result container
   resultContainer.style.display = "none";
+
+  // Get the current quiz data
   const currentQuizData = quizData[currentQuestion];
 
   console.log(currentQuizData.img); // Debugging line
-  // Display the current tally
 
+  // Display the current tally
   tallyContainer.innerHTML = `Question ${currentQuestion + 1}/${quizData.length}`;
+
   // Clear existing classes for tally styles
   tallyContainer.classList = "";
-
 
   // Add blink function to make current question tally standout
   if (currentQuestion >= 0) {
     tallyContainer.classList.add("blink"); // Add the CSS class for blinking effect
   }
 
+  // Display the question text
   questionContainer.innerHTML = currentQuizData.question;
-  choicesContainer.innerHTML = "";
-  imageContainer.innerHTML = ""; // Clear previous image
-  const imageElement = document.createElement("img"); // Create new image element
-  imageElement.src = currentQuizData.img; // Set src attribute
-  imageElement.alt = currentQuizData.alt; // Set alt attribute
-  imageContainer.appendChild(imageElement); // Append image element to image container
 
+  // Clear existing choices
+  choicesContainer.innerHTML = "";
+
+  // Clear previous image
+  imageContainer.innerHTML = "";
+
+  // Create and display the image element
+  const imageElement = document.createElement("img");
+  imageElement.src = currentQuizData.img;
+  imageElement.alt = currentQuizData.alt;
+  imageContainer.appendChild(imageElement);
+
+  // Create choice buttons and add event listeners
   currentQuizData.choices.forEach((choice, index) => {
     const choiceElement = document.createElement("button");
     choiceElement.innerHTML = choice;
-    choiceElement.addEventListener("click", () =>
-      selectAnswer(index)
-    );
+    choiceElement.addEventListener("click", () => selectAnswer(index));
     choicesContainer.appendChild(choiceElement);
   });
-  if (currentQuestion === 0) {
-    restartButton.style.display = "none";
+  console.log(`Loaded question ${currentQuestion + 1}`); // Debugging line
+}
+// Function to show the quiz result
+function showResult() {
+  // Hide quiz container, choices container, and tally container
+  quizContainer.style.display = "none";
+  choicesContainer.style.display = "none";
+  tallyContainer.style.display = "none";
+
+  // Show result container
+  resultContainer.style.display = "block";
+
+  // Display the user's score and a message based on the score
+  if (score < 10) {
+    resultText.innerHTML = `Your score is ${score} out of ${quizData.length}, better study a little harder!`;
   } else {
-    restartButton.style.display = "block";
+    resultText.innerHTML = `Congratulations! Your score is ${score} out of ${quizData.length}. You're ready to get wet and go fish spotting!`;
   }
+  console.log(`Quiz result displayed`); // Debugging line
 }
 
+// Function to handle answer selection
 function selectAnswer(answerIndex) {
+  // Check if selected answer is correct
   if (answerIndex === quizData[currentQuestion].choices.indexOf(quizData[currentQuestion].correctAnswer)) {
     score++;
   }
 
+  // Move to the next question or show the result
   currentQuestion++;
-
   if (currentQuestion < quizData.length) {
     loadQuestion();
   } else {
@@ -158,30 +186,24 @@ function selectAnswer(answerIndex) {
   }
 }
 
+// Function to restart the quiz
 function restartQuiz() {
+  // Reset variables
   currentQuestion = 0;
   score = 0;
-  resultText.innerHTML = ""; // Clear previous result
-  quizContainer.style.display = "block"; // Show quiz container
+
+  // Clear previous result
+  resultText.innerHTML = "";
+
+  // Show quiz container, choices container, and tally container
+  quizContainer.style.display = "block";
   choicesContainer.style.display = "block";
   tallyContainer.style.display = "block";
+
+  // Load the first question
   loadQuestion();
-  /*showResult();*/
-}
-
-
-function showResult() {
-  quizContainer.style.display = "none";
-  tallyContainer.style.display = "none";
-  choicesContainer.style.display = "none";
-  resultContainer.style.display = "block";
-
-  if (score < 10) {
-    resultText.innerHTML = `Your score is ${score} out of ${quizData.length}, better study a little harder!`;
-  } else {
-    resultText.innerHTML = `Congratulations! Your score is ${score} out of ${quizData.length}. You're ready to get wet and go fish spotting!`;
-  }
 
 }
 
+// Load the first question when the page is loaded
 loadQuestion();
