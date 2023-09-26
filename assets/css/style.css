@@ -367,5 +367,17 @@ img {
   cursor: pointer;
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #0099ff;
+}
+
 
 /* Media queries for flashcards on smaller screens */
