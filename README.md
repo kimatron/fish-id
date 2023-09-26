@@ -56,17 +56,13 @@ The purpose of this feature is to allow users to easily identify what features a
 ![Fish ID Quiz](documentation/quizcapture.png)
 - Each image has 3 multiple choice options for user to pick from
 - There's a reset button to start the quiz again at any point
-- A tally draws users attention with a blinking function to let the user how far along they are in the quiz as they go
+- A tally draws users attention with a blinking function to let the user know how far along they are in the quiz as they go
+
 ![Flash Cards](documentation/capturerestart.png)
 - A home button will direct the user back to the index page on every question
 ![Flash Cards](documentation/capturehome.png)
-- There's a result page that only show's when the quiz is complete and tells the user how many questions they got correct out of the amount of questions in the quiz
+- There's a result page that only shows when the quiz is complete and tells the user how many questions they got correct out of the amount of questions in the quiz
 ![Flash Cards](documentation/captureresults.png)
-
-
-### - Gallery Page
-- A gallery page was added to include images for users to visualize what underwater meditation would look and feel like. It also breaks up any monotonous-looking text blocks.
-- Descriptive text describing each image is included for accessibility or in case the image does not load.
 
 
 

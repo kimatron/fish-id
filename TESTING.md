@@ -20,7 +20,7 @@
 
       - Index page for Modals:
 
-          ![JSHint Validator Spelling Quiz JS](documentation/indexjs.png)
+          ![JSHint Validator Spelling Quiz JS](documentation/jsscriptindex.png)
 #### Accessibility and performance 
   - Using lighthouse in devtools I was able to check and confirm that the website is performing well, accessible and colors and fonts chosen are readable. Happy to see all green results after several tests and tweaks on the recommendations of the previous reports
 
@@ -36,7 +36,8 @@
 
           ![Fish ID Quiz Page Performance Score](documentation/lighthousequiz.png)
 
-      
+### Browser Testing
+- All pages were tested multiple times on Chrome, Firefox, MS Edge and on Safari on my iPhone 11.
 
         
 
