@@ -33,15 +33,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;
 }
 
 #image-container img {
   width: 100%;
-  height: auto;
-  max-width: 30%;
-  /* Adjust as needed */
-  max-height: 30%;
-  /* Adjust as needed */
+  height: 100%;
   object-fit: contain;
   border-radius: 5px;
 }
