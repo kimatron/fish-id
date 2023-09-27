@@ -128,13 +128,6 @@ const flashcards = [{
   },
   {
     topic: 'Fish',
-    image: 'assets/images/pipefish.jpg',
-    imageAlt: 'Pipefish',
-    species: 'Pipefish',
-    funfact: 'Resembles a straight-bodied seahorse and can often be found hiding among seagrass or coral reefs.',
-  },
-  {
-    topic: 'Fish',
     image: 'assets/images/redsnapper.jpg',
     imageAlt: 'Red Snapper',
     species: 'Red Snapper',
