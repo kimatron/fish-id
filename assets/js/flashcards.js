@@ -149,39 +149,49 @@ const flashcards = [{
   },
 ];
 
-
-
-
-
+// Selecting the card element from the HTML
 const card = document.querySelector('.card');
-const cardNextButton = document.querySelector('#card__next');
-let currentSpecies;
-let temporaryCardsArray = [];
 
+// Selecting the cardNextButton element from the HTML
+const cardNextButton = document.querySelector('#nextcard');
+
+// Declaring variables
+let currentSpecies; // Stores the current species being displayed
+let temporaryCardsArray = []; // Stores the flashcards that have been already displayed temporarily
+
+// Event listener that triggers when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', function () {
+  // Generating the first flashcard when the page loads
   generateCard();
 
+  // Event listener that triggers when the cardNextButton is clicked to generate a new flashcard
   cardNextButton.addEventListener('click', generateCard);
 
+  // Event listener that triggers when the card is clicked to toggle the flip animation
   card.addEventListener('click', function (e) {
     e.preventDefault();
     card.classList.toggle('is-flipped');
   });
-
 });
 
+// Function to generate a new flashcard
 const generateCard = function () {
-  card.classList.remove('is-flipped');
+  card.classList.remove('is-flipped'); // Resetting the card to the front side
+
+  // Checking if the flashcards array is empty
   if (flashcards.length === 0) {
-    flashcards.push.apply(flashcards, temporaryCardsArray);
+    flashcards.push.apply(flashcards, temporaryCardsArray); // Restoring temporary cards back to the flashcards array
   }
 
-  let cardTopic = document.querySelector('.card--front .topic');
-  let cardImage = document.querySelector('.card--front .image');
-  let cardContent = document.querySelector('.card--back .card__content');
+  // Selecting the HTML elements that will display the flashcard content
+  let cardTopic = document.querySelector('.frontofcard .topic');
+  let cardImage = document.querySelector('.frontofcard .image');
+  let cardContent = document.querySelector('.backofcard .contentofcard');
 
+  // Generating a random index to select a random flashcard from the flashcards array
   let randomIndex = Math.floor(Math.random() * flashcards.length);
 
+  // Updating the HTML elements with the content from the selected flashcard
   cardTopic.innerText = flashcards[randomIndex].topic;
   cardImage.innerHTML = `<img loading="lazy" src=${flashcards[randomIndex].image} alt=${flashcards[randomIndex].imageAlt}>`;
   cardContent.innerHTML = `
@@ -189,8 +199,12 @@ const generateCard = function () {
     <p>${flashcards[randomIndex].funfact}</p>
   `;
 
+  // Storing the current species for future reference
   currentSpecies = flashcards[randomIndex].species;
 
+  // Adding the selected flashcard to the temporaryCardsArray to prevent repetition
   temporaryCardsArray.push(flashcards[randomIndex]);
+
+  // Removing the selected flashcard from the flashcards array to prevent duplication
   flashcards.splice(randomIndex, 1);
 };
