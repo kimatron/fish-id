@@ -21,6 +21,8 @@
       - Index page for Modals:
 
           ![JSHint Validator Index Page JS](documentation/jsscriptindex.png)
+          ![JSHint Validator Index Page JS](documentation/jsscriptindex.PNG)
+
           
   ##### HTML
   All html pages were ran through the W3 validator tests with no issues.
@@ -92,3 +94,8 @@
   - Removing the max and min width on the css file and changing to 100% and 400px sorted this error.
 - When I tried to change the style of the flashcards to have different colour and shadow, the text on the flip disappears. I undid the style changes to temporarily fix the problem, but once I get time I will make the design of the flashcards more visually appealing.
 - While trying to style the footer, a simple code in css centered and made a neat footer at the end of the index page, but it somehow removed the HOME button on the flashcards and quiz pages. I still need to figure out how to push it down on the index page without effecting my home button. 
+- When transferring images from my PC, the image files are in capital letters (eg, .JPG, .PNG) I change them in VS Code, but for some reason they don't always change in my gitHub Repository. I know it's not the best practice to change directly from there, but with time constraints I read that it is OK.
+
+ ![.png files in VS Code](documentation/bugbigfiles.png)
+
+![.PNG files in GitHub](documentation/bigcodegithub.png)
