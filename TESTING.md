@@ -24,7 +24,7 @@
           
   ##### HTML
   All html pages were ran through the W3 validator tests with no issues.
-  
+
   ![HTML Validator Flashcard Page](documentation/htmlvalidatorflashcards.png)
 
    ![HTML Validator Index Page](documentation/htmlvalidatorindex.png)
@@ -91,4 +91,4 @@
 - One of the images of the arrowcrab on the quiz is too big on larger screens, but for some reason when I try to change the code it causes more problems.
   - Removing the max and min width on the css file and changing to 100% and 400px sorted this error.
 - When I tried to change the style of the flashcards to have different colour and shadow, the text on the flip disappears. I undid the style changes to temporarily fix the problem, but once I get time I will make the design of the flashcards more visually appealing.
-- While trying to style the footer, a simple code in css centered and made a neat footer at the end of the index page, but it somehow removed the HOME button on the flashcards and quiz pages. 
+- While trying to style the footer, a simple code in css centered and made a neat footer at the end of the index page, but it somehow removed the HOME button on the flashcards and quiz pages. I still need to figure out how to push it down on the index page without effecting my home button. 
