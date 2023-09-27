@@ -35,7 +35,13 @@
       - Fish ID Quiz:
 
           ![Fish ID Quiz Page Performance Score](documentation/lighthousequiz.png)
+### Responsiveness
+- All pages were tested for responsiveness on all sizes of screen. Using Flex for CSS made the coding a lot cleaner and less messy:
 
+![Flash Card Responsiveness](documentation/amrflash.png)
+![Index Responsiveness](documentation/amrindex.png)
+![Quiz Responsiveness](documentation/amrquiz.png)
+![Modal Responsiveness](documentation/amrmodal.png)
 ### Browser Testing
 - All pages were tested multiple times on Chrome, Firefox, MS Edge and on Safari on my iPhone 11.
 
