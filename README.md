@@ -57,10 +57,11 @@ The purpose of this feature is to allow users to easily identify what features a
 - Each image has 3 multiple choice options for user to pick from
 - There's a reset button to start the quiz again at any point
 - A tally draws users attention with a blinking function to let the user know how far along they are in the quiz as they go
-
 ![Flash Cards](documentation/capturerestart.png)
 - A home button will direct the user back to the index page on every question
-![Flash Cards](documentation/capturehome.png)
+
+  ![Flash Cards](documentation/capturehome.png)
+
 - There's a result page that only shows when the quiz is complete and tells the user how many questions they got correct out of the amount of questions in the quiz
 ![Flash Cards](documentation/captureresults.png)
 
@@ -133,11 +134,13 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 [Stackoverflow](Stackoverflow.com),
 [FreeCodeCamp](www.freecodecamp.org).
 - Rewatched Love Math project from [Code Institute](www.codeinstitute.com) for inspiration on how to start setting up my site
-- Read through some open source github code to get an idea how to set up the code for modals and flash cards, then worked my code around those ideas. For example, I checked the repository from an old javascript project which helped me to understand how everything in a quiz functioned together more. Used Iuliias code as a base for the flashcards to learn and play around with to add more depth and usefulness to the aim of the page[GitHub Repository](https://github.com/IuliiaKonovalova)  
+- Read through some open source github code to get an idea how to set up the code for modals and flash cards, then worked my code around those ideas. For example, I checked the repository from an old javascript project which helped me to understand how everything in a quiz functioned together more. Used some of Iuliias code as a base for the flashcards to learn and play around with to add more depth and usefulness to the aim of the page, so editing it to my own as I went along [GitHub Repository](https://github.com/IuliiaKonovalova)  
 - Used [Coolors](https://coolors.co/) to get a color scheme to match my images.
-- All photos used were my own, taken by me or for me with permission by my co-worker Tony Land in the Cayman Islands.
+- All photos used were my own, taken by me or for me with permission by my co-worker Tony Land in the Cayman Islands. 
+- Questions and content written by myself.
+
 ### Acknowledgments
-- Thanks to Viola for keeping me sane and providing advice at silly o clock in the morning when my eyes weren't working anymore joining me for a hackathon in the middle of the project, as if we didn't have enough to keep us awake at night :)
+- Thanks to Viola for keeping me sane and providing advice at silly o clock in the morning when my eyes weren't working anymore and joining me for a hackathon in the middle of the project, as if we didn't have enough to keep us awake at night :)
 - And thanks to my mentor Juliia for not ignoring me and jumping in to answer all my annoying questions whenever she was asked :) https://github.com/IuliiaKonovalova 
  
 
